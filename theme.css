@@ -15,7 +15,7 @@ code {
 th {
   font-family: 'Actay Wide', sans-serif;
   line-height: 1;
-  color: #00008b;
+  color: #ffff72;
 }
 td:first-child {
   font-family: 'Actay Wide', sans-serif;
@@ -32,6 +32,9 @@ li:before {
   color: #efefef !important;
   opacity: 0.6 !important;
 }
+.shower {
+  --color-line: rgba(239,239,239,0.3);
+}
 blockquote {
   font-family: 'PT Mono', sans-serif;
   color: #3c7a6e;
@@ -40,6 +43,88 @@ blockquote {
 }
 blockquote:before {
   font-family: 'PT Sans';
+}
+.cover-container {
+  overflow: hidden;
+  padding: 10px;
+  width: 85%;
+  height: 80%;
+  rotate: -0.5deg;
+  box-shadow: 0px 0px 0px 10px rgba(0,0,0,0.25);
+  z-index: -1;
+}
+.bordered {
+  box-shadow: 0px 0px 0px 10px rgba(0,0,0,0.25);
+  max-height: 90%;
+  max-width: 90%;
+  rotate: -0.5deg;
+}
+.bg11 {
+  background-image: url("pictures/bg11.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 0 !important;
+}
+.bg11 > h2 {
+  padding: 10px 10px 10px 63px !important;
+  background: #ffff72 !important;
+  color: #000 !important;
+  margin-top: 52px;
+}
+.bg2 {
+  background-image: url("pictures/bg2.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.bg3 {
+  background-image: url("pictures/bg3.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.bg4 {
+  background-image: url("pictures/bg4.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.bg6 {
+  background-image: url("pictures/bg6.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.bg8 {
+  background-image: url("pictures/bg8.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.bg9 {
+  background-image: url("pictures/bg9.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.bg13 {
+  background-image: url("pictures/bg13.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.bg14 {
+  background-image: url("pictures/bg14.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.bg16 {
+  background-image: url("pictures/bg16.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.bg15 {
+  background-image: url("pictures/bg15.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.bg18 {
+  background-image: url("pictures/bg18.jpg");
+  background-size: cover;
+  background-position: center;
 }
 .end-link {
   font-family: 'Actay Wide', sans-serif;
@@ -61,7 +146,7 @@ blockquote:before {
   padding: 0 15px;
   font-size: 25px;
   line-height: 1.8;
-  background: #ff0056;
+  background: #ffff72;
   left: 0;
   text-align: center;
 }
@@ -72,17 +157,16 @@ blockquote:before {
   visibility: hidden;
 }
 .slide::after {
-  height: 65px;
-  width: 65px;
-  color: #efefef;
+  height: 76px;
+  width: 88px;
+  color: #000;
   font-family: 'Actay Wide', sans-serif;
   font-size: 31px;
-  margin: 10px 76px;
+  margin: 20px 30px;
   line-height: 40px;
-  border-radius: 50%;
 }
 .slide.rbn::after {
-  background: #000;
+  background-image: url("pictures/love.svg");
 }
 .slide::before {
   position: absolute;
@@ -143,7 +227,7 @@ blockquote:before {
   color: #999;
 }
 .progress:before {
-  background: #ff0056;
+  background: #ffff72;
 }
 .tag {
   color: #ad1531;
@@ -183,7 +267,7 @@ blockquote:before {
 }
 .slide.label-header h2 {
   display: inline-block;
-  background: rgba(60,122,110,0.7);
+  background: rgba(60,122,110,0.8);
   padding: 12px;
   font-family: 'Actay Wide', sans-serif;
   font-size: 35px;
@@ -238,6 +322,7 @@ blockquote {
 }
 figcaption {
   opacity: 0.5;
+  color: #efefef;
   position: relative;
   line-height: 1.6;
   margin-top: 40px !important;
